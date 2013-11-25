@@ -3,7 +3,6 @@
     Active Directory User seatch<br />
 	Choose an Option:<br>
     <select name="filter">
-        <option value="sn">Last name</option>
         <option value="displayname">Display name (first and last name)</option>
         <option value="l">Local</option>
 		<option value="name">User</option>

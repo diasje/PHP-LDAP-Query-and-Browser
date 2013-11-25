@@ -32,7 +32,7 @@ $search = ldap_search($ad, $dn, $filter, $attrs)
 $entries = ldap_get_entries($ad, $search);
 
 /* ----- START DB INSERT ------ */
-// Insert into MySql DB (Optional) Uncomment the line below
+// Insert into MySql DB (Optional) Uncomment the lines below
 // $sel = mysql_select_db($db, $con); 
 //     if (!$sel) 
 //     { 

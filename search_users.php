@@ -3,8 +3,7 @@
 error_reporting(0);
 // Fetch variables file
 include 'con.php';
-// Insert into MySql DB (Optional) Uncomment the line below
-// include 'sql.php';
+
 //Connect to LDAP server
 $ad = ldap_connect($host)
       or die( "Could not connect!" );
@@ -24,6 +23,10 @@ $search = ldap_search($ad, $dn, $filter, $attrs)
           or die ("ldap search failed");
 
 $entries = ldap_get_entries($ad, $search);
+
+// Insert into MySql DB (Optional) Uncomment the line below
+// include 'sql.php';
+
 
 if ($entries["count"] > 0) {
   echo "<table border='1' width='100%'>";

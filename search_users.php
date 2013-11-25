@@ -32,7 +32,7 @@ if ($entries["count"] > 0) {
   echo "<td>Departament:</td>";
   echo "<td>Name:</td>";
   echo "<td>User:</td>";
-  echo "<td>Employe:</td>";
+  echo "<td>Employe Number:</td>";
   echo "<td>Email:</td>";
 	echo "<td>Local:</td>";
   echo "</tr>";
@@ -50,7 +50,7 @@ for ($i=0; $i<$entries["count"]; $i++) {
 }
   echo "</table>";
 } else {
-   echo iconv("UTF-8", "ISO-8859-1","<p>Ops não encontrámos nada!</p>");
+   echo iconv("UTF-8", "ISO-8859-1","<p>Ops nothing found!</p>");
 }
 
 ldap_unbind($ad);

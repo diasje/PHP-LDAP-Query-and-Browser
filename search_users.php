@@ -77,6 +77,7 @@ $entries = ldap_get_entries($ad, $search);
 /* ----- END DB INSERT ------ */
 
 if ($entries["count"] > 0) {
+//echo "<button onclick='history.go(-1);'>Back </button><br>"; /* still in devolpemnt */
   echo "<table border='1' width='100%'>";
   echo "<tr>";
     echo "<td>State:</td>";

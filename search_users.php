@@ -33,6 +33,12 @@ $entries = ldap_get_entries($ad, $search);
 
 /* ----- START DB INSERT ------ */
 // Insert into MySql DB (Optional) Uncomment the lines below
+
+// $con = mysql_connect("$sqlhost","$sqluser","$sqlpass"); 
+//     if (!$con) 
+//     { 
+//     die('Could not connect: ' . mysql_error()); 
+//     } 
 // $sel = mysql_select_db($db, $con); 
 //     if (!$sel) 
 //     { 
@@ -69,6 +75,7 @@ $entries = ldap_get_entries($ad, $search);
 // 
 //     } 
 //   mysql_close($con); 
+
 /* ----- END DB INSERT ------ */
 
 if ($entries["count"] > 0) {
